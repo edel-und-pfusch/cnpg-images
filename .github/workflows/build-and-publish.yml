@@ -25,7 +25,7 @@ jobs:
         uses: redhat-actions/buildah-build@v2
         with:
           image: ghcr.io/${{ github.repository }}/cloudnative-pg-cron
-          tags: ${{ github.sha }}
+          tags: ${{ github.sha }} 18.1-system-trixie
           containerfiles: |
             ./cnpg-pgcron/Dockerfile
 
