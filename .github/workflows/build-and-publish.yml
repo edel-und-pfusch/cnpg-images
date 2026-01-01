@@ -43,7 +43,7 @@ jobs:
         uses: redhat-actions/push-to-registry@v2
         with:
           image: cloudnative-pg-cron
-          tags: ${{ github.sha }}
+          tags: ${{ github.sha }} 18.1-system-trixie
           registry: ghcr.io/${{ github.repository }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
